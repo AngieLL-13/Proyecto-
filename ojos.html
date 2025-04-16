@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos de Ojos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header> 
+    <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="file:///C:/Users/User/OneDrive/Documentos/UNIVERSIDAD/WEB/Makeup/proyecW.html">Makeup</a></li>  
+         <li class="nav-item"><a href="file:///C:/Users/User/OneDrive/Documentos/UNIVERSIDAD/WEB/Makeup/proyecW.html#tiendas-fisicas">Tiendas Físicas</a></li>
+         <li class="nav-item"><a href="#mi-carrito">Mi Carrito</a></li>  
+         <li class="nav-item"><a href="file:///C:/Users/User/OneDrive/Documentos/UNIVERSIDAD/WEB/Makeup/Login.html">Login</a></li>
+
+      </ul>   
+    </nav>
+  </header>
+<h4>Ojos</h4>
+
+    <div class="menu">
+        <div class="menu-item-content">
+            <span class="menu-item-text">Delineador</span>
+            <img src="https://ame.com.co/cdn/shop/products/DELINEADOR-EN-GEL_b84418b1-7088-4e3f-8e1f-5db91a1a7993.jpg?v=1626705444" class="menu-item" title="Gloss">
+            <h3 class="Precio">Precio: $ 32.000 </h3>          
+            <button class="add-to-cart-btn" onclick="addToCart('Delineador', 32.000)">Agregar al Carrito</button>
+          </div>
+
+        <div class="menu-item-content">
+            <span class="menu-item-text">Pestañina</span>
+            <img src="https://d2d21jw8en5l3a.cloudfront.net/vendty2_db_42213_liri2021/imagenes_productos/1076_pestaina_colossal_7x_maybelline_imagen.png" class="menu-item" title="Pestañina">
+            <h3 class="Precio">Precio: $50.000</h3>
+            <button class="add-to-cart-btn" onclick="addToCart('Pestañina', 50.000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="menu-item-content">
+            <span class="menu-item-text">Sombras</span>
+            <img src="https://cromantic.vtexassets.com/arquivos/ids/174816/paleta-de-sombras-nude-bys.jpg?v=637762946650730000" class="menu-item" title="Sombras">
+            <h3 class="Precio">Precio: $34.000</h3>
+            <button class="add-to-cart-btn" onclick="addToCart('Sombras', 34000)">Agregar al Carrito</button>
+
+        </div>
+        <div class="menu-item-content">
+          <span class="menu-item-text">Gel Cejas</span>
+          <img src="https://ame.com.co/cdn/shop/products/gel-on-fleek-web-3-100_3656359b-c2fe-4531-bd21-79b2399330e8.jpg?v=1670623117" class="menu-item" title="Gel_Cejas">
+          <h3 class="Precio">Precio: $34.000</h3>
+          <button class="add-to-cart-btn" onclick="addToCart('Gel_Cejas', 34000)">Agregar al Carrito</button>
+
+      </div>
+      <div class="menu-item-content">
+        <span class="menu-item-text">Delineador Lapiz</span>
+        <img src="https://www.sephora.com.mx/on/demandware.static/-/Sites-masterCatalog_Sephora/es_MX/dwdce98c67/images/hi-res/boletos/Jazmin/RARE%20BEAUTY/LIPS/LIP%20LINER_RARE%20BEAUTY_Kind%20Words%20Matte%20Lip%20Liner_TALENTED_840122905179_MAIN7.jpg" class="menu-item" title="Delineador_Lapiz">
+        <h3 class="Precio">Precio: $64.000</h3>
+        <button class="add-to-cart-btn" onclick="addToCart('Delineador_Lapiz', 64000)">Agregar al Carrito</button>
+
+    </div>
+    <div class="menu-item-content">
+      <span class="menu-item-text">Sombras liquidas</span>
+      <img src="https://static.wixstatic.com/media/099191_dd41fb1b36144ee89860af1bc9626c00~mv2.jpeg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/099191_dd41fb1b36144ee89860af1bc9626c00~mv2.jpeg" class="menu-item" title="Sombras_liquidas">
+      <h3 class="Precio">Precio: $64.000</h3>
+      <button class="add-to-cart-btn" onclick="addToCart('Sombras_liquidas', 64000)">Agregar al Carrito</button>
+
+  </div>
+  <div class="menu-item-content">
+    <span class="menu-item-text">Pestañas</span>
+    <img src="https://copservir.vtexassets.com/arquivos/ids/1016519/PESTANAS-POSTIZAS-CURVEX-LOOK_F.jpg?v=638281994988570000" class="menu-item" title="Pestañas">
+    <h3 class="Precio">Precio: $44.000</h3>
+    <button class="add-to-cart-btn" onclick="addToCart('Pestañas', 44000)">Agregar al Carrito</button>
+
+</div>
+
+    </div>
+    <script>
+      let cart = [];
+
+      function addToCart(producto, precio) {
+          cart.push({ producto, precio });
+          alert(producto + " ha sido agregado al carrito.");
+      }
+
+  </script>
+</body>
+
+</html>

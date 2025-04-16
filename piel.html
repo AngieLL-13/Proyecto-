@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header> 
+    <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="file:///C:/Users/User/OneDrive/Documentos/UNIVERSIDAD/WEB/Makeup/proyecW.html">Makeup</a></li>  
+         <li class="nav-item"><a href="file:///C:/Users/User/OneDrive/Documentos/UNIVERSIDAD/WEB/Makeup/proyecW.html#tiendas-fisicas">Tiendas Físicas</a></li>
+         <li class="nav-item"><a href="#mi-carrito">Mi Carrito</a></li>  
+         <li class="nav-item"><a href="file:///C:/Users/User/OneDrive/Documentos/UNIVERSIDAD/WEB/Makeup/Login.html">Login</a></li>
+
+      </ul>   
+    </nav>
+  </header>
+<h4>Piel</h4>
+
+    <div class="menu">
+        <div class="menu-item-content">
+            <span class="menu-item-text">Base</span>
+            <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/12/01/16698962920256.jpg"  class="menu-item" title="Base">
+            <h3 class="Precio">Precio: $ 22.000 </h3>          
+            <button class="add-to-cart-btn" onclick="addToCart('Base', 22.000)">Agregar al Carrito</button>
+          </div>
+
+        <div class="menu-item-content">
+            <span class="menu-item-text">Corrector</span>
+            <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2023/03/01/16776668085108.jpg"  class="menu-item" title="Corrector">
+            <h3 class="Precio">Precio: $40.000</h3>
+            <button class="add-to-cart-btn" onclick="addToCart('Corrector', 40.000)">Agregar al Carrito</button>
+        </div>
+
+        <div class="menu-item-content">
+            <span class="menu-item-text">Iluminador</span>
+            <img src="https://blushbar.vtexassets.com/arquivos/ids/202329-800-800?v=638369694457300000&width=800&height=800&aspect=true"  class="menu-item" title="Iluminador">
+            <h3 class="Precio">Precio: $14.000</h3>
+            <button class="add-to-cart-btn" onclick="addToCart('Iluminador', 14000)">Agregar al Carrito</button>
+        </div>
+        <div class="menu-item-content">
+          <span class="menu-item-text">Rubor</span>
+          <img src="https://i.pinimg.com/236x/30/6a/f8/306af8b60e403ff506e188cc5d45177c.jpg"  class="menu-item" title="Rubor">
+          <h3 class="Precio">Precio: $19.000</h3>
+          <button class="add-to-cart-btn" onclick="addToCart('Rubor', 19000)">Agregar al Carrito</button>
+      </div>
+      <div class="menu-item-content">
+        <span class="menu-item-text">BB Cream</span>
+        <img src="https://i.pinimg.com/736x/bf/95/d6/bf95d62025fabda473f0bad3633d906c.jpg"  class="menu-item" title="BB Cream">
+        <h3 class="Precio">Precio: $23.000</h3>
+        <button class="add-to-cart-btn" onclick="addToCart('BB Cream', 23000)">Agregar al Carrito</button>
+    </div>
+    <div class="menu-item-content">
+      <span class="menu-item-text">Contorno</span>
+      <img src="https://media.vogue.es/photos/5f06f6f7f25f467f55fea459/master/w_320%2Cc_limit/Captura%2520de%2520pantalla%25202020-07-09%2520a%2520las%252012.52.26.png"  class="menu-item" title="Contorno">
+      <h3 class="Precio">Precio: $33.000</h3>
+      <button class="add-to-cart-btn" onclick="addToCart('Contorno', 33000)">Agregar al Carrito</button>
+  </div>
+  <div class="menu-item-content">
+    <span class="menu-item-text">Humectante</span>
+    <img src="https://imagenes.elpais.com/resizer/v2/WUJPVOC3HZEVTARSQXUB7F4PXA.png?auth=6f244697b799a1ae8865a5af80f2fde3edcadd7aa8d41ac8835a341286fd8360&width=1960"  class="menu-item" title="Humectante">
+    <h3 class="Precio">Precio: $33.000</h3>
+    <button class="add-to-cart-btn" onclick="addToCart('Humectante', 33000)">Agregar al Carrito</button>
+</div>
+    </div>
+    <script>
+      let cart = [];
+
+      function addToCart(producto, precio) {
+          cart.push({ producto, precio });
+          alert(producto + " ha sido agregado al carrito.");
+      }
+
+  </script>
+</body>
+
+</html>
